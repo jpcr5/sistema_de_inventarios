@@ -51,8 +51,7 @@ body {
   flex-direction: column; /* apila header y layout verticalmente :D xddd*/
 }
 
-/* ===== HEADER =====
-   Barra superior fija con el logo, botón,
+/* Barra superior fija con el logo, botón,
    campana de notificaciones y avatar del usuario.
    position: sticky + top: 0 hace que se quede pegado. Nota: no mover esa monda -_- */
 .header {
@@ -88,7 +87,7 @@ body {
 
 .header-logo svg { color: var(--verde-bright); }
 
-/* Botón (≡): abre/cierra el sidebar */
+/* Botón: abre/cierra el sidebar */
 /*NOTA: perfeccionar mas adelante*/
 .hamburger {
   background: none;
