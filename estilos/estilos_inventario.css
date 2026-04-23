@@ -18,7 +18,7 @@
    box-sizing: border-box hace que el padding y borde se incluyan dentro del ancho y alto del elemento */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ===== Variables Generales =====
+/* 
    Se usan aquí una sola vez y se vuelven a reutilizar en todo el archivo
    con var(--nombre-variable). Si uds dos cambian un color aquí,
    se actualiza automáticamente en todo el sistema, asi que pilas bro */
@@ -40,8 +40,7 @@
   --radius-sm: 10px;             /* borde redondeado pequeño (inputs, tabla) */
 }
 /*PD: estos colores son provicionales mientras
-/* ===== BODY =====
-   Configura la fuente base, el fondo verde oscuro y
+/* Configura la fuente base, el fondo verde oscuro y
    el layout en columna para que el header se quede arriba y el contenido ocupe el resto de la pantalla sin errores*/
 body {
   font-family: 'Nunito', sans-serif;
