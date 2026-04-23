@@ -153,7 +153,7 @@ body {
   
 }
 
-/* ===== SIDEBAR (menú lateral) =====
+/* menú lateral
    Navegación fija a la izquierda.
    position: sticky + top: 70px lo pega debajo del header */
 .sidebar {
@@ -206,14 +206,14 @@ body {
 /* El botón "Cerrar sesión" se empuja hasta el fondo del sidebar */
 .nav-logout { margin-top: auto; }
 
-/* ===== ÁREA DE CONTENIDO PRINCIPAL ===== */
+/*  ÁREA DE CONTENIDO PRINCIPAL */
 .main {
   flex: 1;
   padding: 32px 36px;
   overflow-y: auto; /* permite scroll si el contenido es largo */
 }
 
-/* ===== SISTEMA DE VISTAS =====
+/*  SISTEMA DE VISTAS 
    Cada sección (Inicio, Inventario, Perfil) es una "vista".
    Por defecto todas están ocultas con display:none.
    Solo la que tiene la clase "activa" se muestra.
@@ -233,7 +233,7 @@ body {
     inset 5px 5px 15px rgba(0, 0, 0, 0.35 );
 }
 
-/* ===== FILA DE ESTADÍSTICAS =====
+/*  fila de estadisticas
    Grid responsivo que ajusta las columnas automáticamente
    según el ancho de pantalla disponible */
 .stats-row {
@@ -267,7 +267,7 @@ body {
 .stat-number { font-size: 2.4rem; font-weight: 800; color: var(--text-dark); line-height: 1; margin: 4px 0; }
 .stat-sub { font-size: 0.82rem; color: var(--text-dark); opacity: 0.7; }
 
-/* ===== BANNER HERO (página de Inicio) =====
+/* página de Inicio
    Tarjeta con degradado de colores que muestra
    el mensaje de bienvenida y el botón principal */
 .hero-banner {
@@ -306,7 +306,7 @@ body {
   
 }
 
-/* ===== BOTONES =====
+/* botones:
    Estilo base compartido en forma de píldora redondeada.
    Las variantes solo cambian el color de fondo */
 .btn {
@@ -338,11 +338,11 @@ body {
 .btn-danger { background: var(--rojo-btn); color: white; }
 .btn-danger:hover { background: #c02020; transform: translateY(-1px); }
 
-/* ===== TÍTULO DE PÁGINA =====
+/* titulo de pagina
    Texto grande al inicio de cada vista */
 .page-title { font-size: 1.8rem; font-weight: 800; color: var(--text-light); margin-bottom: 24px; }
 
-/* ===== FORMULARIOS ===== */
+/* formularios */
 .form-group { margin-bottom: 16px; }
 
 /* Etiqueta del campo (texto pequeño encima del input) */
@@ -368,7 +368,7 @@ body {
 /* Al hacer clic en el input aparece un resplandor verde */
 .form-input:focus { box-shadow: 0 0 0 3px rgba(49, 136, 187, 0.473); }
 
-/* ===== TABLA DE INVENTARIO ===== */
+/* tabla de inventario */
 /* overflow: hidden oculta las esquinas para respetar el border-radius */
 .table-wrapper { border-radius: var(--radius-sm); overflow: hidden; margin-top: 16px; }
 
@@ -391,7 +391,7 @@ tbody td { padding: 11px 16px; font-size: 0.92rem; }
   
 }
 
-/* ===== PÁGINA DE PERFIL ===== */
+/* pagina de perfil*/
 
 /* Encabezado con ícono grande + título "Mi perfil" */
 .profile-header {
@@ -476,7 +476,7 @@ tbody td { padding: 11px 16px; font-size: 0.92rem; }
 
 }
 
-/* ===== ALERTAS =====
+/*alertas:
    Mensajes de éxito/error que aparecen al realizar acciones.
    Están ocultas por defecto. JavaScript les agrega "show"
    y las muestra 3 segundos antes de ocultarlas de nuevo */
@@ -494,7 +494,7 @@ tbody td { padding: 11px 16px; font-size: 0.92rem; }
 /* Clase que JavaScript agrega para mostrar la alerta */
 .alert.show { display: block; }
 
-/* ===== RESPONSIVE =====
+/* responsividad
    En pantallas menores a 768px (tablets y móviles):
    - El sidebar desaparece completamente
    - Los grids de 2 columnas pasan a 1 columna
