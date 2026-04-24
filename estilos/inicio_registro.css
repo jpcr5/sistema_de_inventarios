@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:  none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background:#2d5b8d ;
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+}
+
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    /*aca se cuadra la caja trasera de color azul, se controla su opacidad y demas*/
+    backdrop-filter: blur(10px ) ;
+    background-color: rgba(55, 83, 111, 0.4);
+    border-radius: 25px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    5px 5px 15px rgba(0, 0, 0, 0.35 ),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35 );  
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    /*color de texto en la caja trasera*/
+    color: white;
+    transition: all 500ms;
+    
+} 
+
+.caja__trasera div p,
+.caja__trasera div button{
+margin-top: 30px;
+}
+/*texto de los titulos de las cajas*/
+.caja__trasera div h3{
+font-weight: 400;
+font-size: 26px;
+}
+
+
+/*aca se configura los botones*/
+.caja__trasera button{
+padding: 10px 40px;
+border: 2px solid #fff;
+background: transparent;
+font-size: 14px;
+font-weight: 600;
+cursor: pointer;
+color: white;
+outline: none;
+transition: all 300ms;
+/*esto es para el boton*/
+ box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    5px 5px 15px rgba(0, 0, 0, 0.35 ),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35 );  
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*para cuando el cursor pasa sobre los botones*/
+.caja__trasera button:hover{
+    border-radius: 14px;
+background:#fff;
+color: #46A2FD;
+ box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    5px 5px 15px rgba(0, 0, 0, 0.35 ),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35 );  
+}
+
+
+/*formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    /*aca se configura la animacion de la caja*/
+    transition: left 500ms cubic-bezier(0.175, 0.885,0.320,1.275);
+}
+
+/*aca se puso un borde color gris a los forms*/
+.contenedor__login-register form{
+    width: 100%;
+    padding: 90px 20px;
+    /*color de los forms*/
+    border: 8px solid #82797946;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    5px 5px 15px rgba(0, 0, 0, 0.35 ),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35 );  
+    backdrop-filter: blur(15px);
+    position: absolute;
+    border-radius: 20px;
+}
+
+
+.contenedor__login-register form h2{
+font-size: 30px;
+text-align: center;
+margin-bottom: 20px;
+color: #46A2FD;
+}
+
+/*espacios para llenar*/
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(55, 83, 111, 0.4);
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form button{
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    5px 5px 15px rgba(0, 0, 0, 0.35 ),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35 );  
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+
+.formulario__register{
+    display: none;
+}
+
+.icon1:hover{
+    background-color: rgba(55, 83, 111, 0.4);   
+    color: #f1f1f2;
+    transition: .5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+/*aca se pone el color y estilo cuando el cursor pasa por encima*/
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    5px 5px 15px rgba(0, 0, 0, 0.35 ),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35 );
+}
+
+.link_recuperacion{
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    color: #ffffffa2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/*trabajando en el responsive desing*/
+
+@media screen and (max-width:850px){
+    main{
+        margin-top:50px;
+    }
+.caja__trasera{
+            max-width: 350px;
+            height: 300px;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .caja__trasera div{
+            margin: 0px;
+            position: absolute;
+        } 
+/*Formulario*/
+
+.contenedor__login-register{
+    top: -10px;
+    left: -5px;
+    margin: auto;
+        }
+
+.contenedor__login-register form{
+    position: relative;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    5px 5px 15px rgba(0, 0, 0, 0.35 ),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1), 
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35 );  
+        }
+}
+
+
+
+
+
+
+
+
+
+
